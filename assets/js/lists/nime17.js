@@ -16,22 +16,22 @@ jQuery(function ($) {
             extension = '',
             tracks = [{
                 "track": 1,
-                "name": "All This Is - Joe L.'s Studio",
+                "name": "Musician No. 1",
                 "length": "0:46",
                 "file": "musician1.wav"
             }, {
                 "track": 2,
-                "name": "The Forsaken - Broadwing Studio (Final Mix)",
+                "name": "Musician No. 2",
                 "length": "2:05",
                 "file": "musician2.wav"
             }, {
                 "track": 3,
-                "name": "All The King's Men - Broadwing Studio (Final Mix)",
+                "name": "Musician No. 3",
                 "length": "0:48",
                 "file": "musician3.wav"
             }, {
                 "track": 4,
-                "name": "The Forsaken - Broadwing Studio (First Mix)",
+                "name": "Musician No. 4",
                 "length": "1:29",
                 "file": "musician4.wav"
             } ],
