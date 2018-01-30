@@ -1,119 +1,112 @@
 <!DOCTYPE HTML>
 <html>
-    <head>
-        <title>Towards A Virtual-Acoustic String Instrument | Sandor Mehes</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-        <link rel="stylesheet" href="assets/css/main.css" />
-        <link rel="stylesheet" href="assets/css/mediaelementplayer.css">
-        <link rel="stylesheet" href="assets/css/normalize.min.css">
-        <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-        
-    </head>
-    <body>
-        <!-- Header -->
-        <section id="header">
-            <header>
-                <span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
-                <h1 id="logo"><a href="#">Sandor Mehes</a></h1>
-                <p>PhD student, audio enthusiast<br />
-                    and vinyl junkie</p>
-            </header>
-            <nav id="nav">
-                <ul>
-                    <li><a href="index.html#one">Projects</a></li>
-                    <li><a href="index.html#two">Publications</a></li>
-                    <li><a href="index.html#three">About Me</a></li>
-                    <li><a href="index.html#four">Contact</a></li>
-                </ul>
-            </nav>
-            <footer>
-                <ul class="icons">
-                    <li><a href="https://twitter.com/sandor_mehes" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-                    <li><a href="https://www.facebook.com/sandor.mehes" target="_blank" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-                    <li><a href="https://www.linkedin.com/in/sandor-mehes/" target="_blank" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
-                    <li><a href="https://github.com/sandormehes" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
-                    <li><a href="mailto:sandor.mehes.85@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
-                </ul>
-            </footer>
-        </section>
-        
-        <!-- Wrapper -->
-        <div id="wrapper">
-            
-            <!-- Main -->
-            <div id="main">
-                <section id="one">
-                    <div class="container">
-                        <header>
-                            <h3>Towards A Virtual-Acoustic String Instrument</h3>
-                            <h5>Sandor Mehes, Maarten van Walstijn and Paul Stapleton</h5>
-                            <p>This paper was originally presented at <a href="https://smc2016.hfmt-hamburg.de" target="_blank">SMC16 Hamburg, Germany</a></p>
-                        </header>
-                        
-                        <h4>Abstract</h4>
-                        <p>In acoustic instruments, the controller and the sound producing system often are one and the same object. If virtual-acoustic instruments are to be designed to not only simulate the vibrational behaviour of a real-world counterpart but also to inherit much of its interface dynamics, it would make sense that the physical form of the controller is similar to that of the emulated instrument. The specific physical model configuration discussed here reconnects a (silent) string controller with a modal synthesis string resonator across the real and virtual domains by direct routing of excitation signals and model parameters. The excitation signals are estimated in their original force-like form via careful calibration of the sensor, making use of adaptive filtering techniques to design an appropriate inverse filter. In addition, the excitation position is estimated from sensors mounted under the legs of the bridges on either end of the prototype string controller. The proposed methodology is explained and exemplified with preliminary results obtained with a number of off-line experiments.</p>
-                        
-                        <h4>Video</h4>
-                        <p>The videos below give an impression of how the newest version of the instrument works across a range of the physical parameter settings.</p>
-                        <div class="video-container">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLWlSU2W7Ya39e4Y-_f2NMWX4aCoq7dEXq" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                        
-                        <h4>Investigative Sound Examples</h4>
-                        <p>Below a range of sound examples exemplifying the role of the estimation of the excitation force.</p>
-                        
-                        <!-- ++++ -->
-                        
-                        <div class="media-wrapper">
-                            <audio id="player2" preload="none" controls style="max-width:100%;">
+
+<head>
+    <title>Towards A Virtual-Acoustic String Instrument | Sandor Mehes</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/mediaelementplayer.css">
+    <link rel="stylesheet" href="assets/css/normalize.min.css">
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+
+</head>
+
+<body>
+    <!-- Header -->
+    <section id="header">
+        <header>
+            <span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
+            <h1 id="logo"><a href="#">Sandor Mehes</a></h1>
+            <p>PhD student, audio enthusiast<br /> and vinyl junkie</p>
+        </header>
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html#one">Projects</a></li>
+                <li><a href="index.html#two">Publications</a></li>
+                <li><a href="index.html#three">About Me</a></li>
+                <li><a href="index.html#four">Contact</a></li>
+            </ul>
+        </nav>
+        <footer>
+            <ul class="icons">
+                <li><a href="https://twitter.com/sandor_mehes" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="https://www.facebook.com/sandor.mehes" target="_blank" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                <li><a href="https://www.linkedin.com/in/sandor-mehes/" target="_blank" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+                <li><a href="https://github.com/sandormehes" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
+                <li><a href="mailto:sandor.mehes.85@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
+            </ul>
+        </footer>
+    </section>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Main -->
+        <div id="main">
+            <section id="one">
+                <div class="container">
+                    <header>
+                        <h3>Towards A Virtual-Acoustic String Instrument</h3>
+                        <h5>Sandor Mehes, Maarten van Walstijn and Paul Stapleton</h5>
+                        <p>This paper was originally presented at <a href="https://smc2016.hfmt-hamburg.de" target="_blank">SMC16 Hamburg, Germany</a></p>
+                    </header>
+
+                    <h4>Abstract</h4>
+                    <p>In acoustic instruments, the controller and the sound producing system often are one and the same object. If virtual-acoustic instruments are to be designed to not only simulate the vibrational behaviour of a real-world counterpart but also to inherit much of its interface dynamics, it would make sense that the physical form of the controller is similar to that of the emulated instrument. The specific physical model configuration discussed here reconnects a (silent) string controller with a modal synthesis string resonator across the real and virtual domains by direct routing of excitation signals and model parameters. The excitation signals are estimated in their original force-like form via careful calibration of the sensor, making use of adaptive filtering techniques to design an appropriate inverse filter. In addition, the excitation position is estimated from sensors mounted under the legs of the bridges on either end of the prototype string controller. The proposed methodology is explained and exemplified with preliminary results obtained with a number of off-line experiments.</p>
+
+                    <h4>Video</h4>
+                    <p>The videos below give an impression of how the newest version of the instrument works across a range of the physical parameter settings.</p>
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLWlSU2W7Ya39e4Y-_f2NMWX4aCoq7dEXq" frameborder="0" allowfullscreen></iframe>
+                    </div>
+
+                    <h4>Investigative Sound Examples</h4>
+                    <p>Below a range of sound examples exemplifying the role of the estimation of the excitation force.</p>
+
+                    <div class="media-wrapper">
+                        <audio id="player2" preload="none" controls style="max-width:100%;">
                                 <source src="publications/smc16/sounds/extreme/extreme8.wav" type="audio/wav">
                             </audio>
-                        </div>
-                        
-                        <!-- ++++ -->
-                        
-                        <h4>Experimental Sound Examples</h4>
-                        <p>A few sound examples with extreme parameter setup to demonstrate the capabilities of physical modelling.</p>
-                        <audio id="" controls preload="auto">
-                            <source src="publications/smc16/sounds/extreme/extreme8.wav" type="audio/wav">
-                        </audio>
-                        <!--
-                        <ul id="" class="controls">
-                            <li><button class="playpause" type="button"><i class="fa fa-play" aria-hidden="true"></i><i class="fa fa-pause" aria-hidden="true"></i></button></li>
-                            <li class="progress">
-                                <progress value="0" min="0"></progress>
-                                <span></span>
-                            </li>
-                        </ul>
-                        -->
-                        <!-- Download -->
-                        <ul class="actions">
-                            <li><a href="publications/smc16/paper/smc16.pdf" download="mehes_walstijn_stapleton_smc16.pdf" class="button special small icon fa-download">Download the paper</a></li>
-                        </ul>
                     </div>
-                </section>
-            </div>
-            
-            <!-- Footer -->
-            <section id="footer">
-                <div class="container">
-                    <ul class="copyright">
-                        <li>&copy; sandormehes.com. All rights reserved.</li>
+
+
+
+                    <h4>Experimental Sound Examples</h4>
+                    <p>A few sound examples with extreme parameter setup to demonstrate the capabilities of physical modelling.</p>
+
+                    -->
+                    <!-- Download -->
+                    <ul class="actions">
+                        <li><a href="publications/smc16/paper/smc16.pdf" download="mehes_walstijn_stapleton_smc16.pdf" class="button special small icon fa-download">Download the paper</a></li>
                     </ul>
                 </div>
             </section>
         </div>
-        
-        <!-- Scripts -->
-        <script src="assets/js/audioplayer.js"></script>
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/jquery.scrollzer.min.js"></script>
-        <script src="assets/js/jquery.scrolly.min.js"></script>
-        <script src="assets/js/skel.min.js"></script>
-        <script src="assets/js/util.js"></script>
-        <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-        <script src="assets/js/main.js"></script>
-    </body>
+
+        <!-- Footer -->
+        <section id="footer">
+            <div class="container">
+                <ul class="copyright">
+                    <li>&copy; sandormehes.com. All rights reserved.</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/prefixfree.min.js"></script>
+    <script src="assets/js/html5media.min.js"></script>
+    <script src="assets/js/plyr.js"></script>
+    <script src="assets/js/lists/nime17.js"></script>
+    <script src="assets/js/jquery.scrollzer.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+    <script src="assets/js/main.js"></script>
+</body>
+
 </html>
