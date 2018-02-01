@@ -12,28 +12,28 @@ jQuery(function ($) {
     if (supportsAudio) {
         var index = 0,
             playing = false,
-            mediaPath = 'https://archive.org/download/mythium/',
+            mediaPath = 'https://archive.org/download/nime17_201802/',
             extension = '',
             tracks = [{
                 "track": 1,
                 "name": "Musician No. 1",
-                "length": "0:46",
-                "file": "musician1.wav"
+                "length": "0:48",
+                "file": "musician1"
             }, {
                 "track": 2,
                 "name": "Musician No. 2",
-                "length": "2:05",
-                "file": "musician2.wav"
+                "length": "1:51",
+                "file": "musician2"
             }, {
                 "track": 3,
                 "name": "Musician No. 3",
-                "length": "0:48",
-                "file": "musician3.wav"
+                "length": "0:47",
+                "file": "musician3"
             }, {
                 "track": 4,
                 "name": "Musician No. 4",
-                "length": "1:29",
-                "file": "musician4.wav"
+                "length": "1:23",
+                "file": "musician4"
             } ],
             buildPlaylist = $.each(tracks, function(key, value) {
                 var trackNumber = value.track,
