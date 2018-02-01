@@ -12,68 +12,38 @@ jQuery(function ($) {
     if (supportsAudio) {
         var index = 0,
             playing = false,
-            mediaPath = 'https://archive.org/download/mythium/',
+            mediaPath = 'https://archive.org/download/dafx17/',
             extension = '',
             tracks = [{
                 "track": 1,
-                "name": "All This Is - Joe L.'s Studio",
-                "length": "2:46",
-                "file": "JLS_ATI"
+                "name": "Stringlike examples",
+                "length": "0:10",
+                "file": "string"
             }, {
                 "track": 2,
-                "name": "The Forsaken - Broadwing Studio (Final Mix)",
-                "length": "8:31",
-                "file": "BS_TF"
+                "name": "Gonglike examples",
+                "length": "0:16",
+                "file": "gong"
             }, {
                 "track": 3,
-                "name": "All The King's Men - Broadwing Studio (Final Mix)",
-                "length": "5:02",
-                "file": "BS_ATKM"
+                "name": "Platelike examples",
+                "length": "0:17",
+                "file": "plate"
             }, {
                 "track": 4,
-                "name": "The Forsaken - Broadwing Studio (First Mix)",
-                "length": "8:32",
-                "file": "BSFM_TF"
+                "name": "Cymbal examples",
+                "length": "0:10",
+                "file": "cymbal"
             }, {
                 "track": 5,
-                "name": "All The King's Men - Broadwing Studio (First Mix)",
-                "length": "5:05",
-                "file": "BSFM_ATKM"
+                "name": "Rattling examples",
+                "length": "0:12",
+                "file": "rattling"
             }, {
                 "track": 6,
-                "name": "All This Is - Alternate Cuts",
-                "length": "2:49",
-                "file": "AC_ATI"
-            }, {
-                "track": 7,
-                "name": "All The King's Men (Take 1) - Alternate Cuts",
-                "length": "5:45",
-                "file": "AC_ATKMTake_1"
-            }, {
-                "track": 8,
-                "name": "All The King's Men (Take 2) - Alternate Cuts",
-                "length": "5:27",
-                "file": "AC_ATKMTake_2"
-            }, {
-                "track": 9,
-                "name": "Magus - Alternate Cuts",
-                "length": "5:46",
-                "file": "AC_M"
-            }, {
-                "track": 10,
-                "name": "The State Of Wearing Address (fucked up) - Alternate Cuts",
-                "length": "5:25",
-                "file": "AC_TSOWAfucked_up"
-            }, {
-                "track": 11,
-                "name": "Magus - Popeye's (New Years '04 - '05)",
-                "length": "5:54",
-                "file": "PNY04-05_M"
-            }, {
-                "track": 12,
-                "name": "On The Waterfront - Popeye's (New Years '04 - '05)",
-                "length": "4:41",
-                "file": "PNY04-05_OTW"
+                "name": "Scraping examples",
+                "length": "0:08",
+                "file": "timevar"
             } ],
             buildPlaylist = $.each(tracks, function(key, value) {
                 var trackNumber = value.track,
