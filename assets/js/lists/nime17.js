@@ -35,7 +35,7 @@ jQuery(function ($) {
                 "length": "1:23",
                 "file": "musician4"
             } ],
-            buildPlaylist = $.each(tracks, function(key, value) {
+            buildPlaylist = $.each(tracks, function (key, value) {
                 var trackNumber = value.track,
                     trackName = value.name,
                     trackLength = value.length;
