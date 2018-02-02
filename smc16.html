@@ -8,7 +8,7 @@
     <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/normalize.min.css">
-    <link rel="stylesheet prefetch" href="assets/css/plyr.css">
+    <link rel="stylesheet" href="assets/css/player.css">
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 
 </head>
@@ -64,25 +64,35 @@
 
                     <h4>Investigative Sound Examples</h4>
                     <p>Below a range of sound examples exemplifying the role of the estimation of the excitation force.</p>
-                    <div class="column add-bottom">
-                        <div id="mainwrap">
-                            <div id="nowPlay">
-                                <span class="left" id="npAction">Paused...</span>
-                                <span class="right" id="npTitle"></span>
-                            </div>
-                            <div id="audiowrap">
-                                <div id="audio0">
-                                    <audio preload id="audio1" controls="controls">Your browser does not support HTML5 Audio!</audio>
-                                </div>
-                                <div id="plwrap">
-                                    <ul id="plList" style="padding-left: 0px; margin-bottom: 0px;"></ul>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="mediatec-cleanaudioplayer">
+                        <ul data-theme="dark" data-disable-controls="false" data-autoplay="false" data-playlist-height="300px">
+                            <li data-title="String plucked with plastic plectrum (piezo disk signal)" data-type="mp3" data-url="https://archive.org/download/estPluckString1/pdPluck1.mp3" data-free="false"></li>
+                            <li data-title="String plucked with plastic plectrum (estimated force signal)" data-type="mp3" data-url="https://archive.org/download/estPluckString1/estPluck1.mp3" data-free="false"></li>
+                            <li data-title="estBow2" data-type="mp3" data-url="https://archive.org/download/estPluckString1/estBow2.mp3" data-free="false"></li>
+                            <li data-title="estBowString2" data-type="mp3" data-url="https://archive.org/download/estPluckString1/estBowString2.mp3" data-free="false"></li>
+                            <li data-title="estHam1 clean" data-type="mp3" data-url="https://archive.org/download/estPluckString1/estHam1_clean.mp3" data-free="false"></li>
+                            <li data-title="estHamString1" data-type="mp3" data-url="https://archive.org/download/estPluckString1/estHamString1_clean.mp3" data-free="false"></li>
+                            
+                            <li data-title="estPluckString1" data-type="mp3" data-url="https://archive.org/download/estPluckString1/estPluckString1.mp3" data-free="false"></li>
+                            <li data-title="pdbow2" data-type="mp3" data-url="https://archive.org/download/estPluckString1/pdBow2.mp3" data-free="false"></li>
+                            <li data-title="pdBowString2" data-type="mp3" data-url="https://archive.org/download/estPluckString1/pdBowString2.mp3" data-free="false"></li>
+                            <li data-title="pdHam1 clean" data-type="mp3" data-url="https://archive.org/download/estPluckString1/pdHam1_clean.mp3" data-free="false"></li>
+                            <li data-title="pdHamString1 clean" data-type="mp3" data-url="https://archive.org/download/estPluckString1/pdHamString1_clean.mp3" data-free="false"></li>
+
+                            <li data-title="pdPluckString1" data-type="mp3" data-url="https://archive.org/download/estPluckString1/pdPluckString1.mp3" data-free="false"></li>
+                        </ul>
                     </div>
 
                     <h4>Experimental Sound Examples</h4>
                     <p>A few sound examples with extreme parameter setup to demonstrate the capabilities of physical modelling.</p>
+                    <div class="mediatec-cleanaudioplayer">
+                        <ul data-theme="light" data-disable-controls="false" data-autoplay="false" data-playlist-height="300px">
+                            <li data-title="Exp3 scrape bell" data-type="mp3" data-url="https://archive.org/download/smc16_experimental/exp3_scrape_bell.mp3" data-free="false"></li>
+                            <li data-title="Extreme14" data-type="mp3" data-url="https://archive.org/download/smc16_experimental/extreme14.mp3" data-free="false"></li>
+                            <li data-title="Extreme8" data-type="mp3" data-url="https://archive.org/download/smc16_experimental/extreme8.mp3" data-free="false"></li>
+                            <li data-title="Exp2 Scrape beam long" data-type="mp3" data-url="https://archive.org/download/smc16_experimental/exp2_scrape_beam_long.mp3" data-free="false"></li>
+                        </ul>
+                    </div>
 
                     <!-- Download -->
                     <h4>Downloads</h4>
@@ -104,11 +114,6 @@
     </div>
 
     <!-- Scripts -->
-    <script src="assets/js/v3.2.1/jquery.min.js"></script>
-    <script src="assets/js/prefixfree.min.js"></script>
-    <script src="assets/js/html5media.min.js"></script>
-    <script src="assets/js/plyr.js"></script>
-    <script src="assets/js/lists/smc16invest.js"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrollzer.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
@@ -116,6 +121,7 @@
     <script src="assets/js/util.js"></script>
     <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/jquery.cleanaudioplayer.js"></script>
 </body>
 
 </html>
