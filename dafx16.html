@@ -55,24 +55,26 @@
 
                     <h4>Abstract</h4>
                     <p>Physics-based synthesis of tanpura drones requires accurate simulation of stiff, lossy string vibrations while incorporating sustained contact with the bridge and a cotton thread. Several challenges arise from this when seeking efficient and stable algorithms for real-time sound synthesis. The approach proposed here to address these combines modal expansion of the string dynamics with strategic simplifications regarding the string bridge and string-thread contact, resulting in an efficient and provably stable time-stepping scheme with exact modal parameters. Attention is given also to the physical characterisation of the system, including string damping behaviour, body radiation characteristics, and determination of appropriate contact parameters. Simulation results are presented exemplifying the key features of the model.</p>
-                    
+
                     <h4>Drone Syntheseis</h4>
                     <p>Tanpuras are used to generate drones, usually by exciting either 4 or 6 strings in succession. Below an example of a 4-string raga in C generated with the model.</p>
-                    
+
                     <h4>String Motion Animation</h4>
                     <p>The below gif file demonstrates how a C<sub>3</sub> string vibrates and collides with the bridge; in the lower plot, the black and white dots indicate the positions of the thread and the bridge, respectively. The orange surfaces represent the contact force distributions.</p>
-                    
+
+                    <span class="image fit"><img src="images/animate.gif" alt="" /></span>
+
                     <h4>Step-by-Step Derivations</h4>
                     <p>For the convenience of the readers and reviewers, below are provided the various step-by-step mathematical derivations.</p>
                     
-                    <ul class="actions fit">
-                            <li><a href="#" class="button special fit icon fa-download">Fit</a></li>
-                            <li><a href="#" class="button special fit icon fa-download">Fit</a></li>
-                            <li><a href="#" class="button special fit icon fa-download">Fit</a></li>
-                        </ul>
-
+                    <ul class="actions vertical">
+                        <li><a href="publications/dafx16/derivations/derivationA.pdf" download="derivationA.pdf" class="button special small icon fa-download">Derivation A</a></li>
+                        <li><a href="publications/dafx16/derivations/derivationB.pdf" download="derivationB.pdf" class="button special small icon fa-download">Derivation B</a></li>
+                        <li><a href="publications/dafx16/derivations/derivationC.pdf" download="derivationC.pdf" class="button special small icon fa-download">Derivation C</a></li>
+                    </ul>
+                    
                     <h4>Investigative Sound Examples</h4>
-                    <p>Below a range of C<sub>3</sub> string sound examples exemplifying the role of various model elements and parameters. All examples except ex6.wav were generated using xe = L/2 and we = L.</p>
+                    <p>Below a range of C<sub>3</sub> string sound examples exemplifying the role of various model elements and parameters. All examples except ex6.wav were generated using x<sub>e</sub> = L/2 and w<sub>e</sub> = L.</p>
                     <div class="column add-bottom">
                         <div id="mainwrap">
                             <div id="nowPlay">
@@ -89,13 +91,13 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <h4>Radiation Filtering</h4>
-                    <p>The bridge and nut impulse responses were measured using a PCB impact hammer and a microphone placed at 80cm from the instrument.</br> NOTE: If you make use of these impulse responses in your work, please make appropriate reference to this research page/paper.</p>
-                    
+                    <p>The bridge and nut impulse responses were measured using a PCB impact hammer and a microphone placed at 80 cm from the instrument.<br /> <strong>NOTE:</strong> If you make use of these impulse responses in your work, please make appropriate reference to this research page/paper.</p>
+
                     <p>The filtering effect can be appreciated by comparing the ‘raw’ force signals to the radiation signals:</p>
 
-                    
+
                     <h4>Downloads</h4>
                     <ul class="actions">
                         <li><a href="publications/dafx16/paper/dafx16.pdf" download="walstijn_bridges_mehes_dafx16.pdf" class="button special small icon fa-download">Download the paper</a></li>
