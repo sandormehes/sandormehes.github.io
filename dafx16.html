@@ -8,7 +8,7 @@
     <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/normalize.min.css">
-    <link rel="stylesheet prefetch" href="assets/css/plyr.css">
+    <link rel="stylesheet" href="assets/css/player.css">
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 </head>
 
@@ -58,44 +58,63 @@
 
                     <h4>Drone Syntheseis</h4>
                     <p>Tanpuras are used to generate drones, usually by exciting either 4 or 6 strings in succession. Below an example of a 4-string raga in C generated with the model.</p>
+                    <div class="mediatec-cleanaudioplayer">
+                        <ul data-theme="dark" data-disable-controls="false" data-autoplay="false" data-playlist-height="300px">
+                            <li data-title="Tanpure drone synthesis" data-type="mp3" data-url="https://archive.org/download/dafx16_raga/raga.mp3" data-free="false"></li>
+                        </ul>
+                    </div>
 
                     <h4>String Motion Animation</h4>
-                    <p>The below gif file demonstrates how a C<sub>3</sub> string vibrates and collides with the bridge; in the lower plot, the black and white dots indicate the positions of the thread and the bridge, respectively. The orange surfaces represent the contact force distributions.</p>
+                    <p>The below gif file demonstrates how a C<sub>3</sub> string vibrates and collides with the bridge (t=500ms); in the lower plot, the black and white dots indicate the positions of the thread and the bridge, respectively. The orange surfaces represent the contact force distributions.</p>
 
                     <span class="image fit"><img src="images/animate.gif" alt="" /></span>
 
                     <h4>Step-by-Step Derivations</h4>
                     <p>For the convenience of the readers and reviewers, below are provided the various step-by-step mathematical derivations.</p>
-                    
-                    <ul class="actions vertical">
-                        <li><a href="publications/dafx16/derivations/derivationA.pdf" download="derivationA.pdf" class="button special small icon fa-download">Derivation A</a></li>
-                        <li><a href="publications/dafx16/derivations/derivationB.pdf" download="derivationB.pdf" class="button special small icon fa-download">Derivation B</a></li>
-                        <li><a href="publications/dafx16/derivations/derivationC.pdf" download="derivationC.pdf" class="button special small icon fa-download">Derivation C</a></li>
+                    <ul>
+                        <li>Derivation A: derivation of the analytic solution given in Figure 4</li>
+                        <li>Derivation B: derivation of the energy balance in equation (52)</li>
+                        <li>Derivation C: derivation of the attenuation rate formula in Equation (18) from Woodhouse’s modal damping definition</li>
                     </ul>
-                    
+
+                    <ul class="actions fit">
+                        <li><a href="publications/dafx16/derivations/derivationA.pdf" download="derivationA.pdf" class="button special small fit icon fa-download">Derivation A</a></li>
+                        <li><a href="publications/dafx16/derivations/derivationB.pdf" download="derivationB.pdf" class="button special small fit icon fa-download">Derivation B</a></li>
+                        <li><a href="publications/dafx16/derivations/derivationC.pdf" download="derivationC.pdf" class="button special small fit icon fa-download">Derivation C</a></li>
+                    </ul>
+
                     <h4>Investigative Sound Examples</h4>
                     <p>Below a range of C<sub>3</sub> string sound examples exemplifying the role of various model elements and parameters. All examples except ex6.wav were generated using x<sub>e</sub> = L/2 and w<sub>e</sub> = L.</p>
-                    <div class="column add-bottom">
-                        <div id="mainwrap">
-                            <div id="nowPlay">
-                                <span class="left" id="npAction">Paused...</span>
-                                <span class="right" id="npTitle"></span>
-                            </div>
-                            <div id="audiowrap">
-                                <div id="audio0">
-                                    <audio preload id="audio1" controls="controls">Your browser does not support HTML5 Audio!</audio>
-                                </div>
-                                <div id="plwrap">
-                                    <ul id="plList" style="padding-left: 0px; margin-bottom: 0px;"></ul>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="mediatec-cleanaudioplayer">
+                        <ul data-theme="dark" data-disable-controls="false" data-autoplay="false" data-playlist-height="300px">
+                            <li data-title="Normal C3 string (with thread positon xc=5mm)" data-type="mp3" data-url="https://archive.org/download/dafx16_investigative/ex1.mp3" data-free="false"></li>
+                            <li data-title="No stiffness - note the lack of ‘jvari’" data-type="mp3" data-url="https://archive.org/download/dafx16_investigative/ex2.mp3" data-free="false"></li>
+                            <li data-title="No damping - note the lack of high-frequency dissipation" data-type="mp3" data-url="https://archive.org/download/dafx16_investigative/ex3.mp3" data-free="false"></li>
+                            <li data-title="No bridge (plucked at xe = 0.696mm) - This gives an impression of the linear string model" data-type="mp3" data-url="https://archive.org/download/dafx16_investigative/ex6.mp3" data-free="false"></li>
+                            <li data-title="No thread - note the ‘harsher’ sound" data-type="mp3" data-url="https://archive.org/download/dafx16_investigative/ex4.mp3" data-free="false"></li>
+                            <li data-title="Changing the thread position to xc = 4mm - note the shorter jvari length" data-type="mp3" data-url="https://archive.org/download/dafx16_investigative/ex5a.mp3" data-free="false"></li>
+                            <li data-title="Changing the thread position to xc = 8mm - note the increased jvari length" data-type="mp3" data-url="https://archive.org/download/dafx16_investigative/ex5c.mp3" data-free="false"></li>
+                        </ul>
                     </div>
 
                     <h4>Radiation Filtering</h4>
                     <p>The bridge and nut impulse responses were measured using a PCB impact hammer and a microphone placed at 80 cm from the instrument.<br /> <strong>NOTE:</strong> If you make use of these impulse responses in your work, please make appropriate reference to this research page/paper.</p>
+                    <div class="mediatec-cleanaudioplayer">
+                        <ul data-theme="dark" data-disable-controls="false" data-autoplay="false" data-playlist-height="300px">
+                            <li data-title="Bridge impulse response (truncated to 2048 samples)" data-type="mp3" data-url="https://archive.org/download/dafx16_radiation/hb.mp3" data-free="false"></li>
+                            <li data-title="Nut impulse response (truncated to 2048 samples)" data-type="mp3" data-url="https://archive.org/download/dafx16_radiation/hn.mp3" data-free="false"></li>
+                        </ul>
+                    </div>
 
                     <p>The filtering effect can be appreciated by comparing the ‘raw’ force signals to the radiation signals:</p>
+                    <div class="mediatec-cleanaudioplayer">
+                        <ul data-theme="dark" data-disable-controls="false" data-autoplay="false" data-playlist-height="300px">
+                            <li data-title="Bridge force signal (fd) - note the strong low-freq attack transient" data-type="mp3" data-url="https://archive.org/download/dafx16_radiation/fd.mp3" data-free="false"></li>
+                            <li data-title="Bridge radiation signal (pd) - note the relatively slow attack transient" data-type="mp3" data-url="https://archive.org/download/dafx16_radiation/pd.mp3" data-free="false"></li>
+                            <li data-title="Nut force signal (fn) - note again the strong low-freq attack transient" data-type="mp3" data-url="https://archive.org/download/dafx16_radiation/fn.mp3" data-free="false"></li>
+                            <li data-title="Nut radiation signal (pn) - note the different timbre of the nut radiation signal" data-type="mp3" data-url="https://archive.org/download/dafx16_radiation/pn.mp3" data-free="false"></li>
+                        </ul>
+                    </div>
 
 
                     <h4>Downloads</h4>
@@ -117,11 +136,6 @@
     </div>
 
     <!-- Scripts -->
-    <script src="assets/js/v3.2.1/jquery.min.js"></script>
-    <script src="assets/js/prefixfree.min.js"></script>
-    <script src="assets/js/html5media.min.js"></script>
-    <script src="assets/js/plyr.js"></script>
-    <script src="assets/js/lists/nime17.js"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrollzer.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
@@ -129,6 +143,7 @@
     <script src="assets/js/util.js"></script>
     <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/jquery.cleanaudioplayer.js"></script>
 </body>
 
 </html>

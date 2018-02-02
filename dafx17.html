@@ -8,7 +8,7 @@
     <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/normalize.min.css">
-    <link rel="stylesheet prefetch" href="assets/css/plyr.css">
+    <link rel="stylesheet" href="assets/css/player.css">
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 </head>
 
@@ -56,29 +56,41 @@
                     <h4>Abstract</h4>
                     <p>The virtual exploration of the domain of mechano-acoustically produced sound and music is a long-held aspiration of physical modelling. A physics-based algorithm developed for this purpose combined with an interface can be referred to as a virtual-acoustic instrument; its design, formulation, implementation, and control are subject to a mix of technical and aesthetic criteria, including sonic complexity, versatility, modal accuracy, and computational efficiency. This paper reports on the development of one such system, based on simulating the vibrations of a string and a plate coupled via a (nonlinear) bridge element. Attention is given to formulating and implementing the numerical algorithm such that any of its parameters can be adjusted in real-time, thus facilitating musician-friendly exploration of the parameter space and offering novel possibilities regarding gestural control. Simulation results are presented exemplifying the sonic potential of the string-bridge-plate model (including bridge rattling and buzzing), and details regarding efficiency, real-time implementation and control interface development are discussed</p>
 
-                    <h4>Video</h4>
+                    <h4>Animation</h4>
+                    <p>The video below gives a visual demonstration of how the model works for one type of configuration involving a rattling bridge. The bridge mass is visualised here as a red cylinder, and the black and white connections with the string and plate represent the nonlinear springs. The green disk and its connection represent the local damper on the string. In this particular configuation, no 'pulling forces' apply to the mass (this is effected by setting the offsets d<sub>1</sub><sup>-</sup> and d<sub>2</sub><sup>-</sup> to a large value in the model), so it is free to 'float' (in this case, under very small gravity) during phases in which a gap exists between the string and plate. The 'pushing forces' cause semi-regular perturbations in the string and plate vibrations, giving semi-chaotic sounding patterns that can occur at different time scales (i.e. varying from rattling at sub-sonic rates to broadband noise-like buzzing).</p>
                     <div class="video-container">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/5zHJK8Fjdn4" frameborder="0" allowfullscreen></iframe>
                     </div>
 
-                    <h4>Sound Examples</h4>
-                    <div class="column add-bottom">
-                        <div id="mainwrap">
-                            <div id="nowPlay">
-                                <span class="left" id="npAction">Paused...</span>
-                                <span class="right" id="npTitle"></span>
-                            </div>
-                            <div id="audiowrap">
-                                <div id="audio0">
-                                    <audio preload id="audio1" controls="controls">Your browser does not support HTML5 Audio!</audio>
-                                </div>
-                                <div id="plwrap">
-                                    <ul id="plList" style="padding-left: 0px; margin-bottom: 0px;"></ul>
-                                </div>
-                            </div>
-                        </div>
+                    <h4>Off-Line Sound Examples</h4>
+                    <p>Here are a few sound examples, all created off-line. Some of these match the result of a Figure in the paper.</p>
+                    <div class="mediatec-cleanaudioplayer">
+                        <ul data-theme="dark" data-disable-controls="false" data-autoplay="false" data-playlist-height="300px">
+                            <li data-title="Linear coupling between string, bridge, and plate (Rbs = 6) [Figure 4(a)]" data-type="mp3" data-url="https://archive.org/download/dafx17/string_like_Rbs6.mp3" data-free="false"></li>
+                            <li data-title="Linear coupling between string, bridge, and plate (Rbs = 0.6) [Figure 4(b)]" data-type="mp3" data-url="https://archive.org/download/dafx17/string_like_Rbs0p6.mp3" data-free="false"></li>
+                            <li data-title="... some further string-like sounds [collaged], with stiffening spring connections" data-type="mp3" data-url="https://archive.org/download/dafx17/string_like_examples.mp3" data-free="false"></li>
+                            <li data-title="Strong string-plate coupling (linear, η = 0) [Figure 5 (left plot)]" data-type="mp3" data-url="https://archive.org/download/dafx17/plate_like_eta0.mp3" data-free="false"></li>
+                            <li data-title="Strong string-plate coupling (nonlinear, η = 1) [Figure 5 (right plot)]" data-type="mp3" data-url="https://archive.org/download/dafx17/plate_like_eta1.mp3" data-free="false"></li>
+                            <li data-title="... more percussive sounds [collaged]" data-type="mp3" data-url="https://archive.org/download/dafx17/percussion.mp3" data-free="false"></li>
+                            <li data-title="Example of a rattling bridge [Figure 6]" data-type="mp3" data-url="https://archive.org/download/dafx17/rattle.wav" data-free="false"></li>
+                            <li data-title="... more rattling sounds [collaged]" data-type="mp3" data-url="https://archive.org/download/dafx17/rattling_examples.mp3" data-free="false"></li>
+                        </ul>
                     </div>
-                    
+
+                    <h4>On-Line Sound Example</h4>
+                    <p>More examples, but now with time-varying parameters.</p>
+                    <div class="mediatec-cleanaudioplayer">
+                        <ul data-theme="dark" data-disable-controls="false" data-autoplay="false" data-playlist-height="300px">
+                            <li data-title="Slowly introducing rattling (notice the period-doubling effect)" data-type="mp3" data-url="https://archive.org/download/dafx17/rattle_fade.mp3" data-free="false"></li>
+                        </ul>
+                    </div>
+
+                    <h4>Live Sound Example with Controller</h4>
+                    <p>Here you see and hear the real-time controlled system </p>
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5zHJK8Fjdn4" frameborder="0" allowfullscreen></iframe>
+                    </div>
+
                     <h4>Downloads</h4>
                     <ul class="actions">
                         <li><a href="publications/dafx17/paper/dafx17.pdf" download="walstijn_mehes_dafx17.pdf" class="button special small icon fa-download">Download the paper</a></li>
@@ -98,11 +110,6 @@
     </div>
 
     <!-- Scripts -->
-    <script src="assets/js/v3.2.1/jquery.min.js"></script>
-    <script src="assets/js/prefixfree.min.js"></script>
-    <script src="assets/js/html5media.min.js"></script>
-    <script src="assets/js/plyr.js"></script>
-    <script src="assets/js/lists/dafx17.js"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrollzer.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
@@ -110,6 +117,7 @@
     <script src="assets/js/util.js"></script>
     <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/jquery.cleanaudioplayer.js"></script>
 </body>
 
 </html>

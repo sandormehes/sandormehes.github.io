@@ -8,7 +8,7 @@
     <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/normalize.min.css">
-    <link rel="stylesheet prefetch" href="assets/css/plyr.css">
+    <link rel="stylesheet" href="assets/css/player.css">
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 </head>
 
@@ -63,21 +63,13 @@
 
                     <h4>Sound Examples</h4>
                     <p>The system was made available for a few hours to four musicians of varying background and experience, each of whom produced a short piece of music.</p>
-                    <div class="column add-bottom">
-                        <div id="mainwrap">
-                            <div id="nowPlay">
-                                <span class="left" id="npAction">Paused...</span>
-                                <span class="right" id="npTitle"></span>
-                            </div>
-                            <div id="audiowrap">
-                                <div id="audio0">
-                                    <audio preload id="audio1" controls="controls">Your browser does not support HTML5 Audio!</audio>
-                                </div>
-                                <div id="plwrap">
-                                    <ul id="plList" style="padding-left: 0px; margin-bottom: 0px;"></ul>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="mediatec-cleanaudioplayer">
+                        <ul data-theme="dark" data-disable-controls="false" data-autoplay="false" data-playlist-height="300px">
+                            <li data-title="Musician #1" data-type="mp3" data-url="https://archive.org/download/nime17_201802/musician1.mp3" data-free="false"></li>
+                            <li data-title="Musician #2" data-type="mp3" data-url="https://archive.org/download/nime17_201802/musician2.mp3" data-free="false"></li>
+                            <li data-title="Musician #3" data-type="mp3" data-url="https://archive.org/download/nime17_201802/musician3.mp3" data-free="false"></li>
+                            <li data-title="Musician #4" data-type="mp3" data-url="https://archive.org/download/nime17_201802/musician4.mp3" data-free="false"></li>
+                        </ul>
                     </div>
 
                     <!-- Download -->
@@ -100,12 +92,6 @@
     </div>
 
     <!-- Scripts -->
-    
-    <script src="assets/js/v3.2.1/jquery.min.js"></script>
-    <script src="assets/js/prefixfree.min.js"></script>
-    <script src="assets/js/html5media.min.js"></script>
-    <script src="assets/js/plyr.js"></script>
-    <script src="assets/js/lists/nime17.js"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrollzer.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
@@ -113,6 +99,7 @@
     <script src="assets/js/util.js"></script>
     <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/jquery.cleanaudioplayer.js"></script>
 </body>
 
 </html>
