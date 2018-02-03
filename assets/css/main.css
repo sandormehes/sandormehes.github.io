@@ -1974,12 +1974,12 @@
  */
 /* Footer */
  #footer {
-     background: #fafafa;
-     border-top: 0;
-     color: #c0c0c0;
-     overflow: hidden;
-    /*padding: 4em 0 2em 0;
-    */
+    background: #fafafa;
+    border-top: 0;
+    color: #c0c0c0;
+    overflow: hidden;
+    padding: 2em 0 0 0;
+    
 }
  #footer .copyright {
      line-height: 1em;
