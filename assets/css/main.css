@@ -1550,6 +1550,13 @@
      margin: 0 0 2.25em 0;
      padding-left: 1em;
 }
+
+ul.copyright {
+     list-style: disc;
+     margin: 0 0 1.25em 0;
+     padding-left: 1em;
+}
+
  ul li {
      padding-left: 0.5em;
 }
@@ -1978,7 +1985,7 @@
     border-top: 0;
     color: #A6A6A6;
     overflow: hidden;
-    padding: 2em 0 0 0;
+    padding: 1em 0 0 0;
     
 }
  #footer .copyright {
