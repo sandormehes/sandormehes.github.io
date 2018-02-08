@@ -5,7 +5,7 @@
     direction: ltr;
     float: none;
     font-family: 'Lato', sans-serif;
-    font-size: 1em;
+    font-size: 16px; /* font size */
     font-stretch: inherit;
     font-variant: inherit;
     line-height: 1em;
