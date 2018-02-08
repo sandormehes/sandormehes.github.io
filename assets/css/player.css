@@ -118,7 +118,7 @@
 
 .mdtc-clnplra-main-player .mdtc-clnplra-playlist ul li.mdtc-clnplra-playlist-current {
     background: #9AB5DC !important;  /*5687e1*/
-    color: #ffffff;
+    color: #f2f2f2;
 }
 
 /*
@@ -128,7 +128,7 @@
 */
 
 .mdtc-clnplra-main-player .mdtc-clnplra-playlist ul li {
-    background: #fafafa;  /*f3f5f7*/
+    background: #f2f2f2;
 }
 
 .mdtc-clnplra-main-player .mdtc-clnplra-playlist ul li:hover {
@@ -173,7 +173,7 @@
 
 .mdtc-clnplra-main-player .mdtc-clnplra-interface {
     min-height: 68px;
-    background: #fafafa; /*f3f5f7*/
+    background: #f2f2f2;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
