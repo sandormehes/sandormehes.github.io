@@ -52,74 +52,75 @@
                         <h5>Maarten van Walstijn, Jamie Bridges and Sandor Mehes</h5>
                         <p>This paper was originally presented at <a href="http://dafx16.vutbr.cz" target="_blank">DAFx16 Brno, Czech Republic</a></p>
                     </header>
+                    <section>
+                        <h4>Abstract</h4>
+                        <p>Physics-based synthesis of tanpura drones requires accurate simulation of stiff, lossy string vibrations while incorporating sustained contact with the bridge and a cotton thread. Several challenges arise from this when seeking efficient and stable algorithms for real-time sound synthesis. The approach proposed here to address these combines modal expansion of the string dynamics with strategic simplifications regarding the string bridge and string-thread contact, resulting in an efficient and provably stable time-stepping scheme with exact modal parameters. Attention is given also to the physical characterisation of the system, including string damping behaviour, body radiation characteristics, and determination of appropriate contact parameters. Simulation results are presented exemplifying the key features of the model.</p>
+                        <hr />
+                        <h4>Drone Syntheseis</h4>
+                        <p>Tanpuras are used to generate drones, usually by exciting either 4 or 6 strings in succession. Below an example of a 4-string raga in C generated with the model.</p>
+                        <div class="mediatec-cleanaudioplayer">
+                            <ul data-theme="light" data-disable-controls="false" data-autoplay="false" data-playlist-height="300px">
+                                <li data-title="Tanpure drone synthesis" data-type="wav" data-url="publications/dafx16/audio/raga/raga.wav" data-free="false"></li>
+                            </ul>
+                        </div>
+                        <hr />
+                        <h4>String Motion Animation</h4>
+                        <p>The below gif file demonstrates how a C<sub>3</sub> string vibrates and collides with the bridge (t=500ms); in the lower plot, the black and white dots indicate the positions of the thread and the bridge, respectively. The orange surfaces represent the contact force distributions.</p>
 
-                    <h4>Abstract</h4>
-                    <p>Physics-based synthesis of tanpura drones requires accurate simulation of stiff, lossy string vibrations while incorporating sustained contact with the bridge and a cotton thread. Several challenges arise from this when seeking efficient and stable algorithms for real-time sound synthesis. The approach proposed here to address these combines modal expansion of the string dynamics with strategic simplifications regarding the string bridge and string-thread contact, resulting in an efficient and provably stable time-stepping scheme with exact modal parameters. Attention is given also to the physical characterisation of the system, including string damping behaviour, body radiation characteristics, and determination of appropriate contact parameters. Simulation results are presented exemplifying the key features of the model.</p>
-                    
-                    <h4>Drone Syntheseis</h4>
-                    <p>Tanpuras are used to generate drones, usually by exciting either 4 or 6 strings in succession. Below an example of a 4-string raga in C generated with the model.</p>
-                    <div class="mediatec-cleanaudioplayer">
-                        <ul data-theme="light" data-disable-controls="false" data-autoplay="false" data-playlist-height="300px">
-                            <li data-title="Tanpure drone synthesis" data-type="wav" data-url="publications/dafx16/audio/raga/raga.wav" data-free="false"></li>
+                        <span class="image fit"><img src="images/animate.gif" alt="" /></span>
+                        <hr />
+                        <h4>Step-by-Step Derivations</h4>
+                        <p>For the convenience of the readers and reviewers, below are provided the various step-by-step mathematical derivations.</p>
+                        <ul>
+                            <li>Derivation A: derivation of the analytic solution given in Figure 4</li>
+                            <li>Derivation B: derivation of the energy balance in equation (52)</li>
+                            <li>Derivation C: derivation of the attenuation rate formula in Equation (18) from Woodhouse’s modal damping definition</li>
                         </ul>
-                    </div>
 
-                    <h4>String Motion Animation</h4>
-                    <p>The below gif file demonstrates how a C<sub>3</sub> string vibrates and collides with the bridge (t=500ms); in the lower plot, the black and white dots indicate the positions of the thread and the bridge, respectively. The orange surfaces represent the contact force distributions.</p>
-
-                    <span class="image fit"><img src="images/animate.gif" alt="" /></span>
-                    <hr />
-                    <h4>Step-by-Step Derivations</h4>
-                    <p>For the convenience of the readers and reviewers, below are provided the various step-by-step mathematical derivations.</p>
-                    <ul>
-                        <li>Derivation A: derivation of the analytic solution given in Figure 4</li>
-                        <li>Derivation B: derivation of the energy balance in equation (52)</li>
-                        <li>Derivation C: derivation of the attenuation rate formula in Equation (18) from Woodhouse’s modal damping definition</li>
-                    </ul>
-
-                    <ul class="actions fit">
-                        <li><a href="publications/dafx16/derivations/derivationA.pdf" download="derivationA.pdf" class="button special small fit icon fa-download">Derivation A</a></li>
-                        <li><a href="publications/dafx16/derivations/derivationB.pdf" download="derivationB.pdf" class="button special small fit icon fa-download">Derivation B</a></li>
-                        <li><a href="publications/dafx16/derivations/derivationC.pdf" download="derivationC.pdf" class="button special small fit icon fa-download">Derivation C</a></li>
-                    </ul>
-                    
-                    <h4>Investigative Sound Examples</h4>
-                    <p>Below a range of C<sub>3</sub> string sound examples exemplifying the role of various model elements and parameters. All examples except ex6.wav were generated using x<sub>e</sub> = L/2 and w<sub>e</sub> = L.</p>
-                    <div class="mediatec-cleanaudioplayer">
-                        <ul data-theme="light" data-disable-controls="false" data-autoplay="false" data-playlist-height="300px">
-                            <li data-title="Normal C3 string (with thread positon xc=5mm)" data-type="wav" data-url="publications/dafx16/audio/investigative sound examples/ex1.wav" data-free="false"></li>
-                            <li data-title="No stiffness - note the lack of ‘jvari’" data-type="wav" data-url="publications/dafx16/audio/investigative sound examples/ex2.wav" data-free="false"></li>
-                            <li data-title="No damping - note the lack of high-frequency dissipation" data-type="wav" data-url="publications/dafx16/audio/investigative sound examples/ex3.wav" data-free="false"></li>
-                            <li data-title="No bridge (plucked at xe = 0.696mm) - This gives an impression of the linear string model" data-type="wav" data-url="publications/dafx16/audio/investigative sound examples/ex6.wav" data-free="false"></li>
-                            <li data-title="No thread - note the ‘harsher’ sound" data-type="wav" data-url="publications/dafx16/audio/investigative sound examples/ex4.wav" data-free="false"></li>
-                            <li data-title="Changing the thread position to xc = 4mm - note the shorter jvari length" data-type="wav" data-url="publications/dafx16/audio/investigative sound examples/ex5a.wav" data-free="false"></li>
-                            <li data-title="Changing the thread position to xc = 8mm - note the increased jvari length" data-type="wav" data-url="publications/dafx16/audio/investigative sound examples/ex5c.wav" data-free="false"></li>
+                        <ul class="actions fit">
+                            <li><a href="publications/dafx16/derivations/derivationA.pdf" download="derivationA.pdf" class="button special small fit icon fa-download">Derivation A</a></li>
+                            <li><a href="publications/dafx16/derivations/derivationB.pdf" download="derivationB.pdf" class="button special small fit icon fa-download">Derivation B</a></li>
+                            <li><a href="publications/dafx16/derivations/derivationC.pdf" download="derivationC.pdf" class="button special small fit icon fa-download">Derivation C</a></li>
                         </ul>
-                    </div>
+                        <hr />
+                        <h4>Investigative Sound Examples</h4>
+                        <p>Below a range of C<sub>3</sub> string sound examples exemplifying the role of various model elements and parameters. All examples except ex6.wav were generated using x<sub>e</sub> = L/2 and w<sub>e</sub> = L.</p>
+                        <div class="mediatec-cleanaudioplayer">
+                            <ul data-theme="light" data-disable-controls="false" data-autoplay="false" data-playlist-height="300px">
+                                <li data-title="Normal C3 string (with thread positon xc=5mm)" data-type="wav" data-url="publications/dafx16/audio/investigative sound examples/ex1.wav" data-free="false"></li>
+                                <li data-title="No stiffness - note the lack of ‘jvari’" data-type="wav" data-url="publications/dafx16/audio/investigative sound examples/ex2.wav" data-free="false"></li>
+                                <li data-title="No damping - note the lack of high-frequency dissipation" data-type="wav" data-url="publications/dafx16/audio/investigative sound examples/ex3.wav" data-free="false"></li>
+                                <li data-title="No bridge (plucked at xe = 0.696mm) - This gives an impression of the linear string model" data-type="wav" data-url="publications/dafx16/audio/investigative sound examples/ex6.wav" data-free="false"></li>
+                                <li data-title="No thread - note the ‘harsher’ sound" data-type="wav" data-url="publications/dafx16/audio/investigative sound examples/ex4.wav" data-free="false"></li>
+                                <li data-title="Changing the thread position to xc = 4mm - note the shorter jvari length" data-type="wav" data-url="publications/dafx16/audio/investigative sound examples/ex5a.wav" data-free="false"></li>
+                                <li data-title="Changing the thread position to xc = 8mm - note the increased jvari length" data-type="wav" data-url="publications/dafx16/audio/investigative sound examples/ex5c.wav" data-free="false"></li>
+                            </ul>
+                        </div>
+                        <hr />
+                        <h4>Radiation Filtering</h4>
+                        <p>The bridge and nut impulse responses were measured using a PCB impact hammer and a microphone placed at 80 cm from the instrument.<br /> <strong>NOTE:</strong> If you make use of these impulse responses in your work, please make appropriate reference to this research page/paper.</p>
+                        <div class="mediatec-cleanaudioplayer">
+                            <ul data-theme="light" data-disable-controls="false" data-autoplay="false" data-playlist-height="300px">
+                                <li data-title="Bridge impulse response (truncated to 2048 samples)" data-type="wav" data-url="publications/dafx16/audio/radiation filtering/hb.wav" data-free="false"></li>
+                                <li data-title="Nut impulse response (truncated to 2048 samples)" data-type="wav" data-url="publications/dafx16/audio/radiation filtering/hn.wav" data-free="false"></li>
+                            </ul>
+                        </div>
 
-                    <h4>Radiation Filtering</h4>
-                    <p>The bridge and nut impulse responses were measured using a PCB impact hammer and a microphone placed at 80 cm from the instrument.<br /> <strong>NOTE:</strong> If you make use of these impulse responses in your work, please make appropriate reference to this research page/paper.</p>
-                    <div class="mediatec-cleanaudioplayer">
-                        <ul data-theme="light" data-disable-controls="false" data-autoplay="false" data-playlist-height="300px">
-                            <li data-title="Bridge impulse response (truncated to 2048 samples)" data-type="wav" data-url="publications/dafx16/audio/radiation filtering/hb.wav" data-free="false"></li>
-                            <li data-title="Nut impulse response (truncated to 2048 samples)" data-type="wav" data-url="publications/dafx16/audio/radiation filtering/hn.wav" data-free="false"></li>
+                        <p>The filtering effect can be appreciated by comparing the ‘raw’ force signals to the radiation signals:</p>
+                        <div class="mediatec-cleanaudioplayer">
+                            <ul data-theme="light" data-disable-controls="false" data-autoplay="false" data-playlist-height="300px">
+                                <li data-title="Bridge force signal (fd) - note the strong low-freq attack transient" data-type="wav" data-url="publications/dafx16/audio/radiation filtering/fd.wav" data-free="false"></li>
+                                <li data-title="Bridge radiation signal (pd) - note the relatively slow attack transient" data-type="wav" data-url="publications/dafx16/audio/radiation filtering/pd.wav" data-free="false"></li>
+                                <li data-title="Nut force signal (fn) - note again the strong low-freq attack transient" data-type="wav" data-url="publications/dafx16/audio/radiation filtering/fn.wav" data-free="false"></li>
+                                <li data-title="Nut radiation signal (pn) - note the different timbre of the nut radiation signal" data-type="wav" data-url="publications/dafx16/audio/radiation filtering/pn.wav" data-free="false"></li>
+                            </ul>
+                        </div>
+                        <hr />
+                        <h4>Downloads</h4>
+                        <ul class="actions">
+                            <li><a href="publications/dafx16/paper/dafx16.pdf" download="walstijn_bridges_mehes_dafx16.pdf" class="button special small icon fa-download">Download the paper</a></li>
                         </ul>
-                    </div>
-
-                    <p>The filtering effect can be appreciated by comparing the ‘raw’ force signals to the radiation signals:</p>
-                    <div class="mediatec-cleanaudioplayer">
-                        <ul data-theme="light" data-disable-controls="false" data-autoplay="false" data-playlist-height="300px">
-                            <li data-title="Bridge force signal (fd) - note the strong low-freq attack transient" data-type="wav" data-url="publications/dafx16/audio/radiation filtering/fd.wav" data-free="false"></li>
-                            <li data-title="Bridge radiation signal (pd) - note the relatively slow attack transient" data-type="wav" data-url="publications/dafx16/audio/radiation filtering/pd.wav" data-free="false"></li>
-                            <li data-title="Nut force signal (fn) - note again the strong low-freq attack transient" data-type="wav" data-url="publications/dafx16/audio/radiation filtering/fn.wav" data-free="false"></li>
-                            <li data-title="Nut radiation signal (pn) - note the different timbre of the nut radiation signal" data-type="wav" data-url="publications/dafx16/audio/radiation filtering/pn.wav" data-free="false"></li>
-                        </ul>
-                    </div>
-
-                    <h4>Downloads</h4>
-                    <ul class="actions">
-                        <li><a href="publications/dafx16/paper/dafx16.pdf" download="walstijn_bridges_mehes_dafx16.pdf" class="button special small icon fa-download">Download the paper</a></li>
-                    </ul>
+                    </section>
                 </div>
             </section>
         </div>

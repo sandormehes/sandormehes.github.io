@@ -97,9 +97,8 @@
 
 .mdtc-clnplra-main-player .mdtc-clnplra-type-playlist {
     background: #ffffff;
-/*    border-radius: 3px;*/
     overflow: hidden;
-    padding-bottom: 30px; /*player alatti üres terület*/
+    margin-bottom: 36px; /*player alatti üres terület*/
 }
 
 .mdtc-clnplra-main-player .mdtc-clnplra-playlist ul {
