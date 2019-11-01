@@ -3,20 +3,13 @@
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
 
-@font-face {
+ @font-face {
     font-family: 'FontAwesome';
     src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
     src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
-    font-display: auto;
     font-weight: normal;
     font-style: normal;
-    src: local('FontAwesome'),
-       url('/assets/fonts/fontawesome-webfont.woff2') format('woff2'), /* will be preloaded */ 
-       url('/assets/fonts/fontawesome-webfont.woff') format('woff'),
-       url('/assets/fonts/fontawesome-webfont.ttf') format('truetype'),
-       url('/assets/fonts/fontawesome-webfont.eot') format('embedded-opentype');
-    unicode-range: U+000-5FF; /* Latin glyphs */
-}
+  }
 
 .fa {
     display: inline-block;
