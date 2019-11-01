@@ -8,7 +8,8 @@
     <meta name="robots" content="nofollow" />
     <meta http-equiv="author" content="Sandor Mehes" />
     <meta name="description" content="Exploring the Parameter Space of a String-Plate" />
-    <meta name="keywords" content="real-time physical modelling, parametric explorability, music improvisation, nonlinearity, NIME, research, instrument design" />
+    <meta name="keywords"
+        content="real-time physical modelling, parametric explorability, music improvisation, nonlinearity, NIME, research, instrument design" />
     <meta http-equiv="pragma" content="no-cache" />
     <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
     <link rel="stylesheet" href="assets/css/main.css" />
@@ -45,11 +46,14 @@
         </nav>
         <footer>
             <ul class="icons">
-                <li><a href="https://twitter.com/sandormehes" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-                <li><a href="https://www.facebook.com/sandormehes" target="_blank" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-                <li><a href="https://www.linkedin.com/in/sandormehes/" target="_blank" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
-                <li><a href="https://github.com/sandormehes" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
-                <li><a href="mailto:sandor.mehes.85@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
+                <li><a href="https://twitter.com/sandormehes" target="_blank" class="icon fa-twitter"
+                        aria-label="Twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="https://www.linkedin.com/in/sandormehes/" target="_blank" class="icon fa-linkedin"
+                        aria-label="LinkedIn"><span class="label">Linkedin</span></a></li>
+                <li><a href="https://github.com/sandormehes" target="_blank" class="icon fa-github"
+                        aria-label="GitHub"><span class="label">Github</span></a></li>
+                <li><a href="mailto:sandor.mehes.85@gmail.com" class="icon fa-envelope" aria-label="Email"><span
+                            class="label">Email</span></a></li>
             </ul>
         </footer>
     </section>
@@ -62,32 +66,51 @@
             <section id="one">
                 <div class="container">
                     <header>
-                        <h3>Virtual-Acoustic Instrument Design: Exploring the Parameter Space of a String-Plate Model</h3>
+                        <h3>Virtual-Acoustic Instrument Design: Exploring the Parameter Space of a String-Plate Model
+                        </h3>
                         <h5>Sandor Mehes, Maarten van Walstijn and Paul Stapleton</h5>
-                        <p>This paper was originally presented at <a href="http://www.nime2017.org" target="_blank">NIME17 Copenhagen, Denmark</a></p>
+                        <p>This paper was originally presented at <a href="http://www.nime2017.org"
+                                target="_blank">NIME17 Copenhagen, Denmark</a></p>
                     </header>
 
                     <section>
                         <h4>Abstract</h4>
-                        <p>Exploration is an intrinsic element of designing and engaging with acoustic as well as digital musical instruments. This paper reports on the ongoing development of an explorative virtual-acoustic instrument based on simulation of the vibrations of a string coupled nonlinearly to a plate. The performer drives the model by tactile interaction with a string-board controller fitted with piezo-electric sensors. The string-plate model is formulated in a way that prioritises its parametric explorability. Where the roles of creating performance gestures and designing instruments are traditionally separated, such a design provides a continuum across these domains, with retainment of instrument physicality. The string-plate model, its real-time implementation, and the control interface are described, and the system is preliminarily evaluated through informal observations of how musicians engage with the system.</p>
+                        <p>Exploration is an intrinsic element of designing and engaging with acoustic as well as
+                            digital musical instruments. This paper reports on the ongoing development of an explorative
+                            virtual-acoustic instrument based on simulation of the vibrations of a string coupled
+                            nonlinearly to a plate. The performer drives the model by tactile interaction with a
+                            string-board controller fitted with piezo-electric sensors. The string-plate model is
+                            formulated in a way that prioritises its parametric explorability. Where the roles of
+                            creating performance gestures and designing instruments are traditionally separated, such a
+                            design provides a continuum across these domains, with retainment of instrument physicality.
+                            The string-plate model, its real-time implementation, and the control interface are
+                            described, and the system is preliminarily evaluated through informal observations of how
+                            musicians engage with the system.</p>
 
                         <hr />
 
                         <h4>Video</h4>
                         <div class="video-container">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/k8Latz0Dlu0?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/k8Latz0Dlu0?rel=0"
+                                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                         </div>
 
                         <hr />
 
                         <h4>Sound Examples</h4>
-                        <p>The system was made available for a few hours to four musicians of varying background and experience, each of whom produced a short piece of music.</p>
+                        <p>The system was made available for a few hours to four musicians of varying background and
+                            experience, each of whom produced a short piece of music.</p>
                         <div class="mediatec-cleanaudioplayer">
-                            <ul data-theme="light" data-disable-controls="false" data-autoplay="false" data-playlist-height="300px">
-                                <li data-title="Musician #1" data-type="wav" data-url="publications/nime17/audio/musician1.wav" data-free="false"></li>
-                                <li data-title="Musician #2" data-type="wav" data-url="publications/nime17/audio/musician2.wav" data-free="false"></li>
-                                <li data-title="Musician #3" data-type="wav" data-url="publications/nime17/audio/musician3.wav" data-free="false"></li>
-                                <li data-title="Musician #4" data-type="wav" data-url="publications/nime17/audio/musician4.wav" data-free="false"></li>
+                            <ul data-theme="light" data-disable-controls="false" data-autoplay="false"
+                                data-playlist-height="300px">
+                                <li data-title="Musician #1" data-type="wav"
+                                    data-url="publications/nime17/audio/musician1.wav" data-free="false"></li>
+                                <li data-title="Musician #2" data-type="wav"
+                                    data-url="publications/nime17/audio/musician2.wav" data-free="false"></li>
+                                <li data-title="Musician #3" data-type="wav"
+                                    data-url="publications/nime17/audio/musician3.wav" data-free="false"></li>
+                                <li data-title="Musician #4" data-type="wav"
+                                    data-url="publications/nime17/audio/musician4.wav" data-free="false"></li>
                             </ul>
                         </div>
 
@@ -96,7 +119,9 @@
                         <!-- Download -->
                         <h4>Downloads</h4>
                         <ul class="actions">
-                            <li><a href="publications/nime17/paper/nime2017.pdf" download="mehes_walstijn_stapleton_nime17.pdf" class="button special small icon fa-download">Download the paper</a></li>
+                            <li><a href="publications/nime17/paper/nime2017.pdf"
+                                    download="mehes_walstijn_stapleton_nime17.pdf"
+                                    class="button special small icon fa-download">Download the paper</a></li>
                         </ul>
                     </section>
                 </div>

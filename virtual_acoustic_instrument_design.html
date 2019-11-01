@@ -44,11 +44,14 @@
         </nav>
         <footer>
             <ul class="icons">
-                <li><a href="https://twitter.com/sandormehes" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-                <li><a href="https://www.facebook.com/sandormehes" target="_blank" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-                <li><a href="https://www.linkedin.com/in/sandormehes/" target="_blank" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
-                <li><a href="https://github.com/sandormehes" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
-                <li><a href="mailto:sandor.mehes.85@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
+                <li><a href="https://twitter.com/sandormehes" target="_blank" class="icon fa-twitter"
+                        aria-label="Twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="https://www.linkedin.com/in/sandormehes/" target="_blank" class="icon fa-linkedin"
+                        aria-label="LinkedIn"><span class="label">Linkedin</span></a></li>
+                <li><a href="https://github.com/sandormehes" target="_blank" class="icon fa-github"
+                        aria-label="GitHub"><span class="label">Github</span></a></li>
+                <li><a href="mailto:sandor.mehes.85@gmail.com" class="icon fa-envelope" aria-label="Email"><span
+                            class="label">Email</span></a></li>
             </ul>
         </footer>
     </section>
@@ -64,20 +67,54 @@
                 <div class="container">
                     <section>
                         <h3>Virtual-Acoustic Instrument Design</h3>
-                        <p>Among possible ways of mapping parameters to sound, physical modelling represents a special form that inherently constrains the sonic output to have a mechano-acoustic character, as such providing a rigorous basis for developing virtual-acoustic instruments. Such a computer-based system generally comprises a synthesis algorithm and a control interface. This project explores all aspects of the development of virtual-acoustic instruments across the relevant disciplines, including model design, numerical formulation, real-time implementation, control, experimentation, user studies, and artistic practice.</p>
+                        <p>Among possible ways of mapping parameters to sound, physical modelling represents a special
+                            form that inherently constrains the sonic output to have a mechano-acoustic character, as
+                            such providing a rigorous basis for developing virtual-acoustic instruments. Such a
+                            computer-based system generally comprises a synthesis algorithm and a control interface.
+                            This project explores all aspects of the development of virtual-acoustic instruments across
+                            the relevant disciplines, including model design, numerical formulation, real-time
+                            implementation, control, experimentation, user studies, and artistic practice.</p>
                         <hr />
                         <div class="features">
                             <article>
                                 <h4>Virtual-Acoustic String Bridge Plate Instrument</h4>
-                                <p><span class="image left"><img src="images/stringplate.jpg" alt="" /></span>Virtual-Acoustic String Bridge Plate Instrument is based on a physical model that simulates the vibrations of a string and a rectangular plate, coupled with a &lpar;nonlinear&rpar; spring-mass element. The virtual-acoustic string-bridge-plate affords new possibilities and freedom regarding parameter choices and on-line changes that are not possible &lpar;or very expensive to realise&rpar; in real-world instruments. The system takes the form of a string and a plate connected by a parameterised bridge element, with a local damper fitted on the string. The bridge can be parametrically configured to simulate different types of linear and nonlinear coupling, including mass-like behaviour, spring stiffening and contact phenomena &lpar;i.e. rattling and buzzing&rpar;. For detailed information and sound examples please refer to <a href="dafx17.html" target="_blank">DAFx17 paper</a>. Or you can download the plugin in AU or VST by clicking the button below &lpar;Mac only&rpar;.</p>
+                                <p><span class="image left"><img src="images/stringplate.jpg"
+                                            alt="" /></span>Virtual-Acoustic String Bridge Plate Instrument is based on
+                                    a physical model that simulates the vibrations of a string and a rectangular plate,
+                                    coupled with a &lpar;nonlinear&rpar; spring-mass element. The virtual-acoustic
+                                    string-bridge-plate affords new possibilities and freedom regarding parameter
+                                    choices and on-line changes that are not possible &lpar;or very expensive to
+                                    realise&rpar; in real-world instruments. The system takes the form of a string and a
+                                    plate connected by a parameterised bridge element, with a local damper fitted on the
+                                    string. The bridge can be parametrically configured to simulate different types of
+                                    linear and nonlinear coupling, including mass-like behaviour, spring stiffening and
+                                    contact phenomena &lpar;i.e. rattling and buzzing&rpar;. For detailed information
+                                    and sound examples please refer to <a href="dafx17.html" target="_blank">DAFx17
+                                        paper</a>. Or you can download the plugin in AU or VST by clicking the button
+                                    below &lpar;Mac only&rpar;.</p>
 
                                 <ul class="actions">
-                                    <li><a href="download/vaspbi/vaspbi.zip" download="vasbpi.zip" class="button special small icon fa-download">Download the plugin</a></li>
+                                    <li><a href="download/vaspbi/vaspbi.zip" download="vasbpi.zip"
+                                            class="button special small icon fa-download">Download the plugin</a></li>
                                 </ul>
 
                                 <hr />
                                 <h4>String Board Controller</h4>
-                                <p><span class="image left"><img src="images/stringController.jpg" alt="String-board controller" /></span>The string-board controller was based on the concept of reconnecting a &lpar;silent&rpar; string controller with a modal synthesis resonator across the real and virtual domains by direct routing of excitation signals and model parameters. Making use of adaptive filtering techniques to design an appropriate inverse filter, it provides a calibrated signal estimation of the forces exerted by the musician. Each of the bridges consists of a plastic cylindrical piston housed by a metal holder, as such sensing forces only in the vertical direction. The calibration, which removes the &lsquo;nasal&rsquo; timbre normally observed with piezo disks, is now effected by scaling the modal excitation weights in the string model, rather than using a dedicated digital filter at the input stage. Although initially intended to be played through plucking, scraping, tapping, and bowing the string, force signals can also be generated by tapping the board it is mounted on; this alternative mode of interaction affords slightly different nuances in the generated excitation signals.</p>
+                                <p><span class="image left"><img src="images/stringController.jpg"
+                                            alt="String-board controller" /></span>The string-board controller was based
+                                    on the concept of reconnecting a &lpar;silent&rpar; string controller with a modal
+                                    synthesis resonator across the real and virtual domains by direct routing of
+                                    excitation signals and model parameters. Making use of adaptive filtering techniques
+                                    to design an appropriate inverse filter, it provides a calibrated signal estimation
+                                    of the forces exerted by the musician. Each of the bridges consists of a plastic
+                                    cylindrical piston housed by a metal holder, as such sensing forces only in the
+                                    vertical direction. The calibration, which removes the &lsquo;nasal&rsquo; timbre
+                                    normally observed with piezo disks, is now effected by scaling the modal excitation
+                                    weights in the string model, rather than using a dedicated digital filter at the
+                                    input stage. Although initially intended to be played through plucking, scraping,
+                                    tapping, and bowing the string, force signals can also be generated by tapping the
+                                    board it is mounted on; this alternative mode of interaction affords slightly
+                                    different nuances in the generated excitation signals.</p>
                             </article>
                         </div>
                     </section>

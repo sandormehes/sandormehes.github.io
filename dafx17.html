@@ -45,11 +45,14 @@
         </nav>
         <footer>
             <ul class="icons">
-                <li><a href="https://twitter.com/sandormehes" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-                <li><a href="https://www.facebook.com/sandormehes" target="_blank" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-                <li><a href="https://www.linkedin.com/in/sandormehes/" target="_blank" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
-                <li><a href="https://github.com/sandormehes" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
-                <li><a href="mailto:sandor.mehes.85@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
+                <li><a href="https://twitter.com/sandormehes" target="_blank" class="icon fa-twitter"
+                        aria-label="Twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="https://www.linkedin.com/in/sandormehes/" target="_blank" class="icon fa-linkedin"
+                        aria-label="LinkedIn"><span class="label">Linkedin</span></a></li>
+                <li><a href="https://github.com/sandormehes" target="_blank" class="icon fa-github"
+                        aria-label="GitHub"><span class="label">Github</span></a></li>
+                <li><a href="mailto:sandor.mehes.85@gmail.com" class="icon fa-envelope" aria-label="Email"><span
+                            class="label">Email</span></a></li>
             </ul>
         </footer>
     </section>
@@ -64,51 +67,99 @@
                     <header>
                         <h3>An Explorative String-Bridge-Plate Model with Tunable Parameters</h3>
                         <h5>Maarten van Walstijn and Sandor Mehes</h5>
-                        <p>This paper was originally presented at <a href="http://www.dafx17.eca.ed.ac.uk" target="_blank">DAFx17 Edinburgh, United Kingdom</a></p>
+                        <p>This paper was originally presented at <a href="http://www.dafx17.eca.ed.ac.uk"
+                                target="_blank">DAFx17 Edinburgh, United Kingdom</a></p>
                     </header>
 
                     <section>
                         <h4>Abstract</h4>
-                        <p>The virtual exploration of the domain of mechano-acoustically produced sound and music is a long-held aspiration of physical modelling. A physics-based algorithm developed for this purpose combined with an interface can be referred to as a virtual-acoustic instrument; its design, formulation, implementation, and control are subject to a mix of technical and aesthetic criteria, including sonic complexity, versatility, modal accuracy, and computational efficiency. This paper reports on the development of one such system, based on simulating the vibrations of a string and a plate coupled via a &lpar;nonlinear&rpar; bridge element. Attention is given to formulating and implementing the numerical algorithm such that any of its parameters can be adjusted in real-time, thus facilitating musician-friendly exploration of the parameter space and offering novel possibilities regarding gestural control. Simulation results are presented exemplifying the sonic potential of the string-bridge-plate model &lpar;including bridge rattling and buzzing&rpar;, and details regarding efficiency, real-time implementation and control interface development are discussed</p>
+                        <p>The virtual exploration of the domain of mechano-acoustically produced sound and music is a
+                            long-held aspiration of physical modelling. A physics-based algorithm developed for this
+                            purpose combined with an interface can be referred to as a virtual-acoustic instrument; its
+                            design, formulation, implementation, and control are subject to a mix of technical and
+                            aesthetic criteria, including sonic complexity, versatility, modal accuracy, and
+                            computational efficiency. This paper reports on the development of one such system, based on
+                            simulating the vibrations of a string and a plate coupled via a &lpar;nonlinear&rpar; bridge
+                            element. Attention is given to formulating and implementing the numerical algorithm such
+                            that any of its parameters can be adjusted in real-time, thus facilitating musician-friendly
+                            exploration of the parameter space and offering novel possibilities regarding gestural
+                            control. Simulation results are presented exemplifying the sonic potential of the
+                            string-bridge-plate model &lpar;including bridge rattling and buzzing&rpar;, and details
+                            regarding efficiency, real-time implementation and control interface development are
+                            discussed</p>
                         <hr />
                         <h4>Animation</h4>
-                        <p>The video below gives a visual demonstration of how the model works for one type of configuration involving a rattling bridge. The bridge mass is visualised here as a red cylinder, and the black and white connections with the string and plate represent the nonlinear springs. The green disk and its connection represent the local damper on the string. In this particular configuation, no &lsquo;pulling forces&rsquo; apply to the mass &lpar;this is effected by setting the offsets d<sub>1</sub><sup>-</sup> and d<sub>2</sub><sup>-</sup> to a large value in the model&rpar;, so it is free to &lsquo;float&rsquo; &lpar;in this case, under very small gravity&rpar; during phases in which a gap exists between the string and plate. The &lsquo;pushing forces&rsquo; cause semi-regular perturbations in the string and plate vibrations, giving semi-chaotic sounding patterns that can occur at different time scales &lpar;i.e. varying from rattling at sub-sonic rates to broadband noise-like buzzing&rpar;.</p>
+                        <p>The video below gives a visual demonstration of how the model works for one type of
+                            configuration involving a rattling bridge. The bridge mass is visualised here as a red
+                            cylinder, and the black and white connections with the string and plate represent the
+                            nonlinear springs. The green disk and its connection represent the local damper on the
+                            string. In this particular configuation, no &lsquo;pulling forces&rsquo; apply to the mass
+                            &lpar;this is effected by setting the offsets d<sub>1</sub><sup>-</sup> and
+                            d<sub>2</sub><sup>-</sup> to a large value in the model&rpar;, so it is free to
+                            &lsquo;float&rsquo; &lpar;in this case, under very small gravity&rpar; during phases in
+                            which a gap exists between the string and plate. The &lsquo;pushing forces&rsquo; cause
+                            semi-regular perturbations in the string and plate vibrations, giving semi-chaotic sounding
+                            patterns that can occur at different time scales &lpar;i.e. varying from rattling at
+                            sub-sonic rates to broadband noise-like buzzing&rpar;.</p>
                         <div class="video-container">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/MqI_2UpjKyU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/MqI_2UpjKyU?rel=0"
+                                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                         </div>
                         <hr />
                         <h4>Off-Line Sound Examples</h4>
-                        <p>Here are a few sound examples, all created off-line. Some of these match the result of a Figure in the paper.</p>
+                        <p>Here are a few sound examples, all created off-line. Some of these match the result of a
+                            Figure in the paper.</p>
                         <div class="mediatec-cleanaudioplayer">
-                            <ul data-theme="light" data-disable-controls="false" data-autoplay="false" data-playlist-height="300px">
-                                <li data-title="Linear coupling between string, bridge, and plate &lpar;Rbs = 6&rpar; &lbrack;Figure 4&lpar;a&rpar;&rbrack;" data-type="wav" data-url="publications/dafx17/audio/offline/string_like_Rbs6.wav" data-free="false"></li>
-                                <li data-title="Linear coupling between string, bridge, and plate &lpar;Rbs = 0.6&rpar; &lbrack;Figure 4&lpar;b&rpar;&rbrack;" data-type="wav" data-url="publications/dafx17/audio/offline/string_like_Rbs0p6.wav" data-free="false"></li>
-                                <li data-title="... some further string-like sounds &lbrack;collaged&rbrack;, with stiffening spring connections" data-type="wav" data-url="publications/dafx17/audio/offline/string_like_examples.wav" data-free="false"></li>
-                                <li data-title="Strong string-plate coupling &lpar;linear, &eta; = 0&rpar; &lbrack;Figure 5 &lpar;left plot&rpar;&rbrack;" data-type="wav" data-url="publications/dafx17/audio/offline/plate_like_eta0.wav" data-free="false"></li>
-                                <li data-title="Strong string-plate coupling &lpar;nonlinear, &eta; = 1&rpar; &lbrack;Figure 5 &lpar;right plot&rpar;&rbrack;" data-type="wav" data-url="publications/dafx17/audio/offline/plate_like_eta1.wav" data-free="false"></li>
-                                <li data-title="... more percussive sounds &lbrack;collaged&rbrack;" data-type="wav" data-url="publications/dafx17/audio/offline/percussion.wav" data-free="false"></li>
-                                <li data-title="Example of a rattling bridge &lbrack;Figure 6&rbrack;" data-type="wav" data-url="publications/dafx17/audio/offline/rattle.wav" data-free="false"></li>
-                                <li data-title="... more rattling sounds &lbrack;collaged&rbrack;" data-type="wav" data-url="publications/dafx17/audio/offline/rattling_examples.wav" data-free="false"></li>
+                            <ul data-theme="light" data-disable-controls="false" data-autoplay="false"
+                                data-playlist-height="300px">
+                                <li data-title="Linear coupling between string, bridge, and plate &lpar;Rbs = 6&rpar; &lbrack;Figure 4&lpar;a&rpar;&rbrack;"
+                                    data-type="wav" data-url="publications/dafx17/audio/offline/string_like_Rbs6.wav"
+                                    data-free="false"></li>
+                                <li data-title="Linear coupling between string, bridge, and plate &lpar;Rbs = 0.6&rpar; &lbrack;Figure 4&lpar;b&rpar;&rbrack;"
+                                    data-type="wav" data-url="publications/dafx17/audio/offline/string_like_Rbs0p6.wav"
+                                    data-free="false"></li>
+                                <li data-title="... some further string-like sounds &lbrack;collaged&rbrack;, with stiffening spring connections"
+                                    data-type="wav"
+                                    data-url="publications/dafx17/audio/offline/string_like_examples.wav"
+                                    data-free="false"></li>
+                                <li data-title="Strong string-plate coupling &lpar;linear, &eta; = 0&rpar; &lbrack;Figure 5 &lpar;left plot&rpar;&rbrack;"
+                                    data-type="wav" data-url="publications/dafx17/audio/offline/plate_like_eta0.wav"
+                                    data-free="false"></li>
+                                <li data-title="Strong string-plate coupling &lpar;nonlinear, &eta; = 1&rpar; &lbrack;Figure 5 &lpar;right plot&rpar;&rbrack;"
+                                    data-type="wav" data-url="publications/dafx17/audio/offline/plate_like_eta1.wav"
+                                    data-free="false"></li>
+                                <li data-title="... more percussive sounds &lbrack;collaged&rbrack;" data-type="wav"
+                                    data-url="publications/dafx17/audio/offline/percussion.wav" data-free="false"></li>
+                                <li data-title="Example of a rattling bridge &lbrack;Figure 6&rbrack;" data-type="wav"
+                                    data-url="publications/dafx17/audio/offline/rattle.wav" data-free="false"></li>
+                                <li data-title="... more rattling sounds &lbrack;collaged&rbrack;" data-type="wav"
+                                    data-url="publications/dafx17/audio/offline/rattling_examples.wav"
+                                    data-free="false"></li>
                             </ul>
                         </div>
                         <hr />
                         <h4>On-Line Sound Example</h4>
                         <p>More examples, but now with time-varying parameters.</p>
                         <div class="mediatec-cleanaudioplayer">
-                            <ul data-theme="light" data-disable-controls="false" data-autoplay="false" data-playlist-height="300px">
-                                <li data-title="Slowly introducing rattling &lpar;notice the period-doubling effect&rpar;" data-type="wav" data-url="publications/dafx17/audio/online/rattle_fade.wav" data-free="false"></li>
+                            <ul data-theme="light" data-disable-controls="false" data-autoplay="false"
+                                data-playlist-height="300px">
+                                <li data-title="Slowly introducing rattling &lpar;notice the period-doubling effect&rpar;"
+                                    data-type="wav" data-url="publications/dafx17/audio/online/rattle_fade.wav"
+                                    data-free="false"></li>
                             </ul>
                         </div>
                         <hr />
                         <h4>Live Sound Example with Controller</h4>
                         <p>Here you see and hear the real-time controlled system </p>
                         <div class="video-container">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/5zHJK8Fjdn4" frameborder="0" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/5zHJK8Fjdn4"
+                                frameborder="0" allowfullscreen></iframe>
                         </div>
                         <hr />
                         <h4>Downloads</h4>
                         <ul class="actions">
-                            <li><a href="publications/dafx17/paper/dafx17.pdf" download="walstijn_mehes_dafx17.pdf" class="button special small icon fa-download">Download the paper</a></li>
+                            <li><a href="publications/dafx17/paper/dafx17.pdf" download="walstijn_mehes_dafx17.pdf"
+                                    class="button special small icon fa-download">Download the paper</a></li>
                         </ul>
                     </section>
                 </div>
