@@ -9,7 +9,13 @@
     src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
     font-display: auto;
     font-weight: normal;
-    font-style: normal
+    font-style: normal;
+    src: local('FontAwesome'),
+       url('/fonts/fonrawesome-webfont.woff2') format('woff2'), /* will be preloaded */ 
+       url('/fonts/fonrawesome-webfont.woff') format('woff'),
+       url('/fonts/fonrawesome-webfont.ttf') format('truetype'),
+       url('/fonts/fonrawesome-webfont.eot') format('embedded-opentype');
+  unicode-range: U+000-5FF; /* Latin glyphs */
 }
 
 .fa {
